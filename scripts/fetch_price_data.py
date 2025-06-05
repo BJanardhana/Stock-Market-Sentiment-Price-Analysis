@@ -10,7 +10,7 @@ def fetch_stock_data(ticker, start_date="2023-01-01", end_date=None, interval="1
 
     df = yf.download(ticker, start=start_date, end=end_date, interval=interval,auto_adjust=False)
     df.reset_index(inplace=True)
-    df.to_csv(f"E:/GIT Projects/Stock Market Sentiment & Price Analysis/data/{ticker}_price_data.csv", index=False)
+    df.to_csv(f"data/{ticker}_price_data.csv", index=False)
 
     print(f"✅ Data saved to data/{ticker}_price_data.csv")
 
