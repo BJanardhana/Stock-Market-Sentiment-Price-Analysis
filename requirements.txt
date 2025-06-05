@@ -1,0 +1,6 @@
+pandas
+matplotlib
+seaborn
+yfinance
+vaderSentiment
+snscrape @ git+https://github.com/JustAnotherArchivist/snscrape.git
