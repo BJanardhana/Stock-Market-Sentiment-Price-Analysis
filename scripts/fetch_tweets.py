@@ -16,7 +16,7 @@ def fetch_tweets(query, days_back=7, max_tweets=1000, filename="tweets.csv"):
     df = pd.DataFrame(tweets, columns=['datetime', 'text', 'user'])
     
     os.makedirs("data", exist_ok=True)
-    df.to_csv(f"E:/GIT Projects/Stock Market Sentiment & Price Analysis/data/{filename}", index=False)
+    df.to_csv(f"data/{filename}", index=False)
     print(f"✅ Saved {len(df)} tweets to data/{filename}")
 
 # Example usage
